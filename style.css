@@ -14,27 +14,53 @@
 html,
 body {
   font-family: "Open Sans", sans-serif;
-  color: white;
+  color: var(--bg-color);
   height: 100%;
-  background-color: var(--bg-color);
+  background-color: white;
+  min-height: 100vh;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
 /* Title styles */
 .title {
-  width: 50%;
+  width: 70%;
   padding: 1%;
-  margin: 2% auto;
+  margin: 2%;
   text-align: center;
   font-size: 3rem;
-  border: 5px solid white;
-  border-radius: 25px;
 }
 .rock {
   color: var(--rock);
+  border-color: var(--rock);
 }
 .paper {
   color: var(--paper);
+  border-color: var(--paper);
 }
 .scissors {
   color: var(--scissors);
+  border-color: var(--scissors);
+}
+
+/* game icon */
+.gameIcons {
+  display: flex;
+  justify-content: space-around;
+}
+.gameIcon {
+  margin: 5%;
+  cursor: pointer;
+  border: 5px solid;
+  border-radius: 25px;
+}
+.gameIcon:hover {
+  box-shadow: 0 0 15px;
+}
+.gameIcon:active {
+  box-shadow: none;
 }
