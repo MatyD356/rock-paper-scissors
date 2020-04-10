@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Rock paper Scissors</title>
-    <script src="./script.js"></script>
   </head>
   <body>
     <main>
@@ -15,9 +14,9 @@
       </h1>
 
       <div class="gameIcons">
-        <img src="./img/rock.png" alt="rock" class="gameIcon rock" />
-        <img src="./img/paper.png" alt="paper" class="gameIcon paper" />
-        <img src="./img/scissors.png" alt="scissors" class="gameIcon scissors" />
+        <img src="./img/rock.png" alt="rock" class="gameIcon rock" onclick="round(this)" />
+        <img src="./img/paper.png" alt="paper" class="gameIcon paper" onclick="round(this)" />
+        <img src="./img/scissors.png" alt="scissors" class="gameIcon scissors" onclick="round(this)" />
       </div>
 
       <h2>Computer Move</h2>
@@ -27,13 +26,14 @@
         <img src="./img/scissors.png" alt="scissors" class="gameIcon scissors disabled" />
       </div>
       <div class="gameControls">
-        <div class="playerScore">Player score:0</div>
-        <div class="computerScore">Computer score:0</div>
+        <div class="playerScore">Player score: <span id="playerScore">0</span></div>
+        <div class="computerScore">Computer score: <span id="computerScore">0</span></div>
       </div>
       <button class="newGame">New game</button>
     </main>
     <footer>
       <a class="credits" href="https://www.vecteezy.com/free-vector/rock-paper-scissors">Rock Paper Scissors Vectors by Vecteezy</a>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
