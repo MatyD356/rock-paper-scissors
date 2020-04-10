@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap");
+:root {
+  --bg-color: #26006e;
+  --rock: #fe2bf1;
+  --paper: #00dfba;
+  --scissors: #0c7ceb;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +13,7 @@
 }
 html,
 body {
+  font-family: "Open Sans", sans-serif;
   height: 100%;
-  background-color: black;
+  background-color: var(--bg-color);
 }
