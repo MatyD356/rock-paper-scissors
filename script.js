@@ -2,6 +2,7 @@ let playerScore = 0;
 let playerScoreDiv = document.getElementById("playerScore");
 let computerScore = 0;
 let computerScoreDiv = document.getElementById("computerScore");
+let roundOutcomeDiv = document.getElementById("result")
 let moves = ["rock", "paper", "scissors"]
 let randomNumber = () => Math.floor(Math.random() * (2 - 0 + 1)) + 0;
 
@@ -11,39 +12,39 @@ let round = (e) => {
     switch (e.alt) {
         case "rock":
             if (computerMove == e.alt) {
-                console.log("draw")
+                roundOutcomeDiv.innerHTML = "Draw"
             } else if (computerMove == "scissors") {
-                console.log("you win")
+                roundOutcomeDiv.innerHTML = "You win"
                 playerScore++
                 playerScoreDiv.innerHTML = playerScore;
             } else if (computerMove == "paper") {
-                console.log("you lose")
+                roundOutcomeDiv.innerHTML = "You lose"
                 computerScore++;
                 computerScoreDiv.innerHTML = computerScore;
             }
             break;
         case "paper":
             if (computerMove == e.alt) {
-                console.log("draw")
+                roundOutcomeDiv.innerHTML = "Draw"
             } else if (computerMove == "rock") {
-                console.log("you win")
+                roundOutcomeDiv.innerHTML = "You win"
                 playerScore++
                 playerScoreDiv.innerHTML = playerScore;
             } else if (computerMove == "scissors") {
-                console.log("you lose")
+                roundOutcomeDiv.innerHTML = "You lose"
                 computerScore++;
                 computerScoreDiv.innerHTML = computerScore;
             }
             break;
         case "scissors":
             if (computerMove == e.alt) {
-                console.log("draw")
+                roundOutcomeDiv.innerHTML = "Draw"
             } else if (computerMove == "paper") {
-                console.log("you win")
+                roundOutcomeDiv.innerHTML = "You win"
                 playerScore++
                 playerScoreDiv.innerHTML = playerScore;
             } else if (computerMove == "rock") {
-                console.log("you lose")
+                roundOutcomeDiv.innerHTML = "You lose"
                 computerScore++;
                 computerScoreDiv.innerHTML = computerScore;
             }
@@ -67,6 +68,7 @@ let round = (e) => {
     }
 
 }
+
 let reset = () => {
     playerScore = 0;
     computerScore = 0;

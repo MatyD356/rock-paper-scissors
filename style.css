@@ -34,7 +34,7 @@ main {
 }
 /* Title styles */
 .title {
-  width: 70%;
+  width: 50%;
   padding: 1%;
   text-align: center;
   font-size: 3rem;
@@ -80,9 +80,9 @@ main {
   font-size: 2rem;
   font-weight: 600;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 50%;
-  margin: 1%;
+  margin: 2%;
 }
 .newGame {
   cursor: pointer;
@@ -94,6 +94,7 @@ main {
   font-weight: 900;
   border-radius: 25px;
   box-shadow: 0 0 0px;
+  margin-top: 2%;
 }
 .newGame:hover {
   color: var(--rock);
@@ -102,6 +103,12 @@ main {
 .newGame:active {
   background-color: var(--rock);
   color: var(--bg-color);
+}
+.roundOutcome {
+  margin: 0 1%;
+  width: 30%;
+  text-align: center;
+  margin-left: 6%;
 }
 /* footer */
 .footer {
